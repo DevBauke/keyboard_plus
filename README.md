@@ -1,3 +1,19 @@
+**Added reset_is_pressed(hotkey) function as addition to the hotkey listener: is_pressed.
+
+reset_is_pressed is called to reset the returned values for met is_pressed conditions.
+In other words, it is used to remotely reset the keyboard.is_pressed(hotkey) in order to be able to run the condition again. 
+
+Will throw a `ValueError` if the hotkey is not registered.
+
+
+    if keyboard.is_pressed('ctrl+v'):
+        keyboard.reset_is_pressed('ctrl+v') # Allows keyboard.is_pressed('ctrl+v') to be ran again.
+
+        # the rest of your code
+
+All credits go to the original creator:  boppreh.
+Original README included below.
+
 **This project is currently unmaintained. It works for many cases, and I wish to pick it up again in the future, but you might encounter some friction and limited features using it.**
 
 ---
