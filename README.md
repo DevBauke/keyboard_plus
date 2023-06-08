@@ -1,4 +1,5 @@
-**Added reset_is_pressed(hotkey) function as addition to the hotkey listener: is_pressed.
+## keyboard +
+**Added reset_is_pressed(hotkey) function as addition to the hotkey listener: is_pressed.**
 
 reset_is_pressed is called to reset the returned values for met is_pressed conditions.
 In other words, it is used to remotely reset the keyboard.is_pressed(hotkey) in order to be able to run the condition again. 
